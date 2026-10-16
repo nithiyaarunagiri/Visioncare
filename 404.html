@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page not found — VisionCare Optical Store">
+  <title>404 — Page Not Found | VisionCare</title>
+  <link rel="icon" type="image/jpeg" href="images/hero 3.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    /* ===== RESET & BASE ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ECF8F5;
+      color: #123B3A;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+      overflow-x: hidden;
+    }
+
+    /* ===== 404 WRAPPER ===== */
+    .error-wrap {
+      max-width: 780px;
+      width: 100%;
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    /* ===== BIG 404 NUMBER ===== */
+    .error-number {
+      font-size: clamp(6rem, 18vw, 14rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      user-select: none;
+    }
+    .error-number .digit-dark { color: #123B3A; }
+    .error-number .digit-accent { color: #0F766E; }
+
+    /* ===== HEADING ===== */
+    .error-heading {
+      font-size: clamp(1.5rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -1px;
+      color: #123B3A;
+      margin-bottom: 1.4rem;
+    }
+    .error-heading span { color: #0F766E; }
+
+    /* ===== BODY TEXT ===== */
+    .error-text {
+      font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+      font-weight: 400;
+      color: #526E6B;
+      line-height: 1.8;
+      max-width: 640px;
+      margin: 0 auto 2.4rem;
+    }
+
+    /* ===== CTA BUTTON ===== */
+    .error-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 1rem 2.4rem;
+      border-radius: 60px;
+      background: #0F766E;
+      color: #fff;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: .3px;
+      text-decoration: none;
+      box-shadow: 0 12px 30px rgba(15, 118, 110, .28);
+      transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .error-btn i {
+      font-size: .95rem;
+      transition: transform .25s ease;
+    }
+    .error-btn:hover {
+      background: #123B3A;
+      transform: translateY(-3px);
+      box-shadow: 0 18px 42px rgba(15, 118, 110, .38);
+    }
+    .error-btn:hover i { transform: translateX(-4px); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 767px) {
+      body { padding: 1.5rem 1.2rem; }
+      .error-wrap { padding: 1rem 0; }
+      .error-number { letter-spacing: -4px; margin-bottom: 1rem; }
+      .error-heading { margin-bottom: 1rem; }
+      .error-text { margin-bottom: 1.8rem; }
+      .error-btn { padding: .9rem 2rem; font-size: .95rem; }
+    }
+    @media (max-width: 480px) {
+      .error-number { letter-spacing: -2px; margin-bottom: .8rem; }
+      .error-btn { padding: .85rem 1.8rem; font-size: .9rem; gap: 10px; width: 100%; max-width: 320px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="error-wrap">
+    <div class="error-number" aria-hidden="true">
+      <span class="digit-dark">4</span><span class="digit-accent">0</span><span class="digit-dark">4</span>
+    </div>
+
+    <h1 class="error-heading">This Page <span>Went Out of Focus.</span></h1>
+
+    <p class="error-text">
+      Oops! The page you're looking for can't be found — it may have been moved, renamed, or never existed. Let's get you back to something clearer.
+    </p>
+
+    <a href="index.html" class="error-btn">
+      <i class="fas fa-arrow-left"></i> Back To Home
+    </a>
+  </div>
+
+</body>
+</html>
