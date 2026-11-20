@@ -142,38 +142,81 @@
     .btn-dark { background: var(--accent); color: #fff; box-shadow: 0 10px 24px rgba(15,118,110,.28); }
     .btn-dark:hover { background: var(--accent-dark); transform: translateY(-3px); }
 
-    /* ===== PAGE HERO ===== */
-    .page-hero {
-      padding: 5rem 0 4rem;
-      min-height: 340px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      background: url('images/hero 5.jpg') center / cover no-repeat;
-    }
-    .page-hero .container { position: relative; z-index: 2; }
-    .page-hero .section-tag { color: #D8FF8A; }
-    .page-hero h1 {
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      line-height: 1.15;
-      letter-spacing: -1.5px;
-      font-weight: 800;
-      margin-bottom: .9rem;
-      text-shadow: 0 4px 18px rgba(0, 0, 0, .55);
-    }
-    .page-hero h1 span { color: #D8FF8A; font-family: Georgia, serif; font-style: italic; font-weight: 400; }
-    .page-hero p {
-      color: #fff;
-      max-width: 620px;
-      margin: 0 auto;
-      line-height: 1.8;
-      font-size: 1rem;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, .55);
-    }
+    
+/* ===== PAGE HERO ===== */
+.page-hero {
+  min-height: 100svh;
+  padding: 5rem 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  /* Dark overlay to improve text contrast */
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url('images/hero 5.jpg') center / cover no-repeat;
+}
+
+.page-hero .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.page-hero .section-tag {
+  color: #D8FF8A;
+}
+
+.page-hero h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  font-weight: 800;
+  margin-bottom: .9rem;
+  color: #fff;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.7);
+}
+
+.page-hero h1 span {
+  color: #D8FF8A;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.page-hero p {
+  color: #fff;
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* ===== RESPONSIVE HERO ===== */
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 4rem 1rem;
+    min-height: 100svh;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2rem, 7vw, 2.6rem);
+    letter-spacing: -0.8px;
+  }
+
+  .page-hero p {
+    font-size: .95rem;
+  }
+}
+
 
     /* ===== BOOKING LAYOUT ===== */
     .booking-layout { display: grid; grid-template-columns: 1.4fr 1fr; gap: 2.5rem; align-items: start; }
